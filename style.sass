@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i')
+
+// colors
+$one: #000
+$two: #fff
+$three: #ccc
+$darkerthree: #8A9091
+$twit: #4099ff
+$fb: #3B5998
+$gplus: #DB5A3C
+$inst: #5C3D2E
+$git: #4183C4
+$navback: #313234
+$navbut: #45474a
+
+//fonts 
+$first-font: 'Open Sans', sans-serif
+
+//mixins
+=exposure($sort)
+	display: -webkit-#{$sort}
+	display: -moz-#{$sort}
+	display: -ms-#{$sort}
+	display: $sort
+
+* 
+	box-sizing: border-box
+
+body 
+	margin: 0
+	font-family: $first-font
+
+section > .container 
+	margin: 50px auto
+
+.row 
+	margin: 0
+	padding: 0
+
+.container 
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+
+// CLEARFIX 
+
+.clearfix:before,
+.clearfix:after 
+	content: " "
+	display: table
+
+.clearfix:after 
+	clear: both
+
+// HEADER 
+
+header 
+	background: $navback
+	height: 50px
+	
+	> nav 
+		position: relative
+		img 
+			padding: 10px 0
+		ul
+			@extend .row
+			list-style-type: none
+			float: right
+			> li 
+				display: inline-block
+				text-align: center
+				width: 140px
+				&:hover 
+					ul 
+						display: block
+				> ul 
+					display: none
+					position: absolute
+					z-index: 1
+					> li 
+						display: block
+						color: $two
+						background: $navback
+						line-height: 50px
+						font-size: 14px
+						text-align: center
+						cursor: pointer
+						&:hover 
+							background: $three
+				> a 
+					color: $two
+					display: block
+					line-height: 50px
+					font-size: 14px
+					text-decoration: none
+					text-transform: uppercase
+					padding: 0 20px
+					cursor: pointer
+					&:hover 
+						background: $navbut
+					i.fa 
+						color: $two
+						margin-right: 10px
+
+// HERO  
+
+.hero 
+	background: $navback url('https://static.pexels.com/photos/6063/laptop-notebook-technology-computer.jpg') no-repeat 0/cover
+	width: 100%
+	height: calc(100vh - 50px)
+	position: relative
+	button 
+		border: 0
+		background: $darkerthree
+		width: 17px
+		height: 17px
+		border-radius: 50%
+		position: absolute
+		&:first-of-type 
+			top: 92%
+			left: 45%
+		&:nth-of-type(2) 
+			background: $two
+			top: 92%
+			left: 50%
+		&:last-of-type 
+			top: 92%
+			left: 55%
+	.slogan 
+		color: $two
+		background: rgba(49, 50, 52, 0.5)
+		width: 60vw
+		max-width: 700px
+		text-transform: uppercase
+		text-shadow: 1px 1px $one
+		margin-top: 30vh
+		padding-left: 50px
+		float: right
+		h2:first-child 
+			font-weight: 100
+			margin-bottom: 0
+		h1 
+			font-size: 30px
+			font-weight: 800
+			margin-top: 0
+
+// DESCRIPTION 
+
+.desc 
+	[class^="col-"] 
+		margin-top: 100px
+		padding: 20px
+		float: left
+		h3 
+			text-align: center
+		p 
+			color: $three
+			text-align: center
+		.icon 
+			color: $two
+			background: $navback
+			width: 100px
+			font-size: 40px
+			text-align: center
+			border-radius: 10px
+			margin: 0 auto
+			padding: 20px
+			border: 0
+			&:hover
+				background: $twit
+				+ h3 
+					color: $twit
+
+// GALLERY HEADER 
+
+.headsec 
+	height: 300px
+	h2 
+		color: $navback
+		text-align: center
+		font-size: 36px
+		font-weight: 800
+		text-transform: uppercase
+		padding-top: 50px
+	p 
+		color: $three
+		text-align: center
+
+// GALLERY 
+
+.gallery 
+	padding: 0
+	> div 
+		float: left
+		overflow: hidden
+		position: relative
+	[class^="col-"] 
+		float: left
+		overflow: hidden
+		position: relative
+		img 
+			display: block
+			height: 250px
+		.flex 
+			display: none
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			background: rgba(0, 0, 0, 0.5)
+			.fa 
+				display: none
+		&:hover 
+			.flex 
+				+exposure(flex)
+				justify-content: space-around
+				align-items: center 
+				.fa 
+					display: inline
+					color: $three
+					font-size: 40px
+
+// STAFF 
+
+.staff 
+	width: 100%
+	height: auto
+	div
+		div 
+			float: left
+			padding: 50px 0
+	figure
+		img 
+			border-radius: 50%
+			margin: 0 auto
+		figcaption 
+			color: $navback
+			width: 180px
+			font-size: 18px
+			font-weight: 700
+			text-align: center
+			padding-top: 10px
+
+		.job 
+			display: none
+			position: absolute
+			p 
+				color: $two
+				font-size: 22px
+				position: relative
+				text-align: center
+		&:hover 
+			.job 
+				display: block
+				background: rgba(0, 0, 0, 0.7)
+				width: 180px
+				height: 180px
+				border-radius: 50%
+				
+// ABOUT COMPANY DESCRIPTION 
+
+.company 
+	background: $navback url() no-repeat
+	margin: 100px 0
+	> div 
+		div 
+			float: left
+			padding: 0 20px
+			img 
+				display: block
+				width: 100%
+				float: left
+				margin: 50px 0
+			h2 
+				color: $two
+				font-size: 24px
+				font-weight: 700
+				text-transform: uppercase
+				text-align: center
+				text-shadow: 1px 1px $one
+			p 
+				color: $three
+
+// FEW NUMBERS PART 
+
+.summary 
+	border-top: 3px solid black
+	border-bottom: 3px solid black
+	margin-bottom: 100px
+	> div 
+		div 
+			float: left
+			padding: 0 30px
+			h2 
+				font-size: 40px
+				font-weight: 800
+				text-transform: uppercase
+				text-align: center
+			h3 
+				color: $twit
+				font-weight: bold
+				text-transform: uppercase
+				text-align: center
+
+// FOOTER 
+
+footer 
+	color: $two
+	background: $navback
+	.copyrights 
+		p 
+			background: $one
+			font-weight: 500
+			text-align: center
+			margin: 0
+			padding: 20px
+	> div 
+		> div 
+			float: left
+			padding: 20px 20px
+			.social 
+				display: inline-block
+				.icon_btn 
+					background-color: $two
+					border: 0
+					border-radius: 50%
+					font-size: 20px
+					line-height: 40px
+					width: 40px
+					height: 40px
+					margin: 0 5px
+					transition: .4s
+					&:hover
+						color: $two
+						transform: scale(1.1)
+				.twitter 
+					color: $twit
+					&:hover
+						background-color: $twit
+				.facebook 
+					color: $fb
+					&:hover
+						background-color: $fb	
+				.google-plus 
+					color: $gplus
+					&:hover
+						background-color: $gplus
+				.instagram 
+					color: $inst
+					&:hover
+						background-color: $inst
+				.github 
+					color: $git
+					&:hover
+						background-color: $git
+		.get 
+			div 
+				display: inline
+				float: left
+				padding: 0
+			> div
+				width: 100%
+				> div:nth-of-type(2) 
+					font-size: 12px
+					padding-left: 5px
+			.phone, .email 
+				margin-top: 10px
+
+@media (max-width: 767px) 
+
+	.col-s-1  
+		width: 8.334% 
+	.col-s-2  
+		width: 16.667% 
+	.col-s-3  
+		width: 25% 
+	.col-s-4  
+		width: 33.334% 
+	.col-s-5  
+		width: 41.667% 
+	.col-s-6  
+		width: 50% 
+	.col-s-7  
+		width: 58.334% 
+	.col-s-8  
+		width: 66.667% 
+	.col-s-9  
+		width: 75% 
+	.col-s-10  
+		width: 83.334% 
+	.col-s-11  
+		width: 91.667% 
+	.col-s-12  
+		width: 100% 
+	
+	.col-s-offset-2  
+		margin-left: 16.667% 
+
+	header 
+		height: auto
+		> nav 
+			img 
+				display: block
+				margin: 0 auto
+			ul 
+				float: none
+				> li 
+					width: 100%
+					&:hover
+						ul
+							display: none
+					> ul 
+						display: none
+					> a
+						&:hover 
+							background: none
+							
+	// HERO 
+
+	.hero 
+		height: calc(100vh - 350px)
+		button 
+			display: none
+		.slogan 
+			width: 100%
+			text-align: center
+			margin-top: 5%
+			padding-left: 0
+			h1 
+				font-size: 1.8em
+
+	// DESCRIPTION  
+
+	.desc 
+		[class^="col-"] 
+			margin-top: 50px
+			padding: 20px 40px
+			.icon 
+				background: $twit
+			h3 
+				color: $twit
+	
+	// GALLERY HEADER 
+
+	.headsec 
+		h2 
+			font-size: 1.7em
+		p 
+			padding: 10px 40px
+	
+	// GALLERY 
+
+	.gallery 
+		[class^="col-"]
+			img 
+				width: 100%
+				height: auto
+			.flex 
+				background: none
+				+exposure(flex)
+				justify-content: space-around
+				align-items: center
+				.fa 
+					display: inline
+					color: $three
+					font-size: 40px
+	
+	// STAFF 
+
+	.staff
+		div 
+			div 
+				padding: 10px 0
+		figure 
+			margin: 0 auto
+			img 
+				display: block
+			figcaption 
+				font-size: 20px
+				width: 100%
+				margin: 0 
+			.job 
+				display: block
+				padding: 0
+				width: 100%
+				position: absolute
+				p 
+					margin-top: 5px
+					width: 100%
+	
+			&:hover 
+				.job 
+					display: block
+					background: none
+					width: 100%
+	
+	// ABOUT COMPANY DESCRIPTION 
+
+	.company 
+		margin: 50px 0
+		> div 
+			div 
+				float: none
+				margin: 0 auto
+				padding: 0
+				img 
+					width: 100%
+					margin: 20px auto
+	
+				h2 
+					font-size: 20px
+				p 
+					text-align: center
+
+	// FEW NUMBERS PART 
+
+	.summary 
+		margin-bottom: 50px
+		> div 
+			div
+				h2 
+					font-size: 2em
+	
+	// FOOTER 
+
+	footer 
+		> .container 
+			margin: 20px 0
+		.copyrights p 
+			font-size: 0.8em
+			padding: 10px
+		> div 
+			> div 
+				padding: 0
+				text-align: center
+				margin: 5px auto
+				margin-top: 20px
+				h2 
+					margin: 10px 0 0
+			.get 
+				> div 
+					> div:nth-of-type(2) 
+						padding: 10px 0
+	
+@media (min-width: 768px) 
+	
+	.col-m-1  
+		width: 8.334% 
+	.col-m-2  
+		width: 16.667% 
+	.col-m-3  
+		width: 25% 
+	.col-m-4  
+		width: 33.334% 
+	.col-m-5  
+		width: 41.667% 
+	.col-m-6  
+		width: 50% 
+	.col-m-7  
+		width: 58.334% 
+	.col-m-8  
+		width: 66.667% 
+	.col-m-9  
+		width: 75% 
+	.col-m-10  
+		width: 83.334% 
+	.col-m-11  
+		width: 91.667% 
+	.col-m-12  
+		width: 100% 
+	
+	.col-m-offset-0  
+		margin-left: 0% 
+	.col-m-offset-1  
+		margin-left: 8.334% 
+	.col-m-offset-2  
+		margin-left: 16.667% 
+	.col-m-offset-3  
+		margin-left: 25% 
+	.col-m-offset-4  
+		margin-left: 33.334% 
+	.col-m-offset-5  
+		margin-left: 41.667% 
+	.col-m-offset-6  
+		margin-left: 50% 
+	.col-m-offset-7  
+		margin-left: 58.334% 
+	.col-m-offset-8  
+		margin-left: 66.667% 
+	.col-m-offset-9  
+		margin-left: 75% 
+	.col-m-offset-10  
+		margin-left: 83.334% 
+	.col-m-offset-11  
+		margin-left: 91.667% 
