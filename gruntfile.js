@@ -1,4 +1,4 @@
-module.export = function(grunt) {
+module.exports = function(grunt) {
 
 	// Project configuration.
 	grunt.initConfig({
@@ -8,10 +8,9 @@ module.export = function(grunt) {
 			},
 			dist: {
 				files: {
-					'css/*.css': 'sass/*.sass'
+					'css/style.css': 'sass/style.sass'
 					}
 				}
-			}
 		},
 		
 		imagemin: {
@@ -20,10 +19,10 @@ module.export = function(grunt) {
 					expand: true,
 					cwd: 'images/',
 					src: ['**/*.{pgn,jpg,gif}'],
-					dest: 'images/build/'
+					dest: 'images/after/'
 				}]
 			}
-		}
+		},
 		
 		watch: {
 			scripts: {
