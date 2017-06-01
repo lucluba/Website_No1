@@ -275,7 +275,7 @@ footer {
         width: 40px;
         height: 40px;
         margin: 0 5px;
-        transition: 0.4s; }
+        transition: .4s; }
         footer > div > div .social .icon_btn:hover {
           color: #fff;
           transform: scale(1.1); }
@@ -314,43 +314,30 @@ footer {
 @media (max-width: 767px) {
   .col-s-1 {
     width: 8.334%; }
-
   .col-s-2 {
     width: 16.667%; }
-
   .col-s-3 {
     width: 25%; }
-
   .col-s-4 {
     width: 33.334%; }
-
   .col-s-5 {
     width: 41.667%; }
-
   .col-s-6 {
     width: 50%; }
-
   .col-s-7 {
     width: 58.334%; }
-
   .col-s-8 {
     width: 66.667%; }
-
   .col-s-9 {
     width: 75%; }
-
   .col-s-10 {
     width: 83.334%; }
-
   .col-s-11 {
     width: 91.667%; }
-
   .col-s-12 {
     width: 100%; }
-
   .col-s-offset-2 {
     margin-left: 16.667%; }
-
   header {
     height: auto; }
     header > nav img {
@@ -366,7 +353,6 @@ footer {
           display: none; }
         header > nav ul > li > a:hover {
           background: none; }
-
   .hero {
     height: calc(100vh - 350px); }
     .hero button {
@@ -378,7 +364,6 @@ footer {
       padding-left: 0; }
       .hero .slogan h1 {
         font-size: 1.8em; }
-
   .desc [class^="col-"] {
     margin-top: 50px;
     padding: 20px 40px; }
@@ -386,12 +371,10 @@ footer {
       background: #4099ff; }
     .desc [class^="col-"] h3 {
       color: #4099ff; }
-
   .headsec h2 {
     font-size: 1.7em; }
   .headsec p {
     padding: 10px 40px; }
-
   .gallery [class^="col-"] img {
     width: 100%;
     height: auto; }
@@ -407,7 +390,6 @@ footer {
       display: inline;
       color: #ccc;
       font-size: 40px; }
-
   .staff div div {
     padding: 10px 0; }
   .staff figure {
@@ -430,7 +412,6 @@ footer {
       display: block;
       background: none;
       width: 100%; }
-
   .company {
     margin: 50px 0; }
     .company > div div {
@@ -444,12 +425,10 @@ footer {
         font-size: 20px; }
       .company > div div p {
         text-align: center; }
-
   .summary {
     margin-bottom: 50px; }
     .summary > div div h2 {
       font-size: 2em; }
-
   footer > .container {
     margin: 20px 0; }
   footer .copyrights p {
@@ -464,76 +443,54 @@ footer {
       margin: 10px 0 0; }
   footer > div .get > div > div:nth-of-type(2) {
     padding: 10px 0; } }
+
 @media (min-width: 768px) {
   .col-m-1 {
     width: 8.334%; }
-
   .col-m-2 {
     width: 16.667%; }
-
   .col-m-3 {
     width: 25%; }
-
   .col-m-4 {
     width: 33.334%; }
-
   .col-m-5 {
     width: 41.667%; }
-
   .col-m-6 {
     width: 50%; }
-
   .col-m-7 {
     width: 58.334%; }
-
   .col-m-8 {
     width: 66.667%; }
-
   .col-m-9 {
     width: 75%; }
-
   .col-m-10 {
     width: 83.334%; }
-
   .col-m-11 {
     width: 91.667%; }
-
   .col-m-12 {
     width: 100%; }
-
   .col-m-offset-0 {
     margin-left: 0%; }
-
   .col-m-offset-1 {
     margin-left: 8.334%; }
-
   .col-m-offset-2 {
     margin-left: 16.667%; }
-
   .col-m-offset-3 {
     margin-left: 25%; }
-
   .col-m-offset-4 {
     margin-left: 33.334%; }
-
   .col-m-offset-5 {
     margin-left: 41.667%; }
-
   .col-m-offset-6 {
     margin-left: 50%; }
-
   .col-m-offset-7 {
     margin-left: 58.334%; }
-
   .col-m-offset-8 {
     margin-left: 66.667%; }
-
   .col-m-offset-9 {
     margin-left: 75%; }
-
   .col-m-offset-10 {
     margin-left: 83.334%; }
-
   .col-m-offset-11 {
     margin-left: 91.667%; } }
 
