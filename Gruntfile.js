@@ -32,9 +32,9 @@ module.exports = function(grunt) {
        			]
     		},
     		options: {
-    			watchtask: true,
+				watchtask: true,
        			server: {
-            		baseDir: "./"
+					baseDir: "./"
         		}
     		}
 		},
