@@ -25,20 +25,20 @@ module.exports = function(grunt) {
 		},
 		
 		browserSync: {
-    		bsFiles: {
-       			src : [
-       				'css/*.css',
-       				'index.html'
-       			]
-    		},
-    		options: {
+			bsFiles: {
+				src : [
+					'css/*.css',
+					'index.html'
+				]
+			},
+			options: {
 				watchtask: true,
-       			server: {
+				server: {
 					baseDir: "./"
-        		}
-    		}
+				}
+			}
 		},
-		
+
 		watch: {
 			scripts: {
 				files: ['sass/*.sass'],
