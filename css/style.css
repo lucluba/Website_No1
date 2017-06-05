@@ -72,7 +72,7 @@ header {
             margin-right: 10px; }
 
 .hero {
-  background: #313234 url("images/after/laptop-notebook-technology-computer.jpg") no-repeat 0/cover;
+  background: #313234 url("../images/after/laptop-notebook-technology-computer.jpg") no-repeat 0/cover;
   width: 100%;
   height: calc(100vh - 50px);
   position: relative; }
