@@ -161,6 +161,8 @@ header {
     .gallery [class^="col-"] img {
       display: block;
       height: 250px; }
+    .gallery [class^="col-"] .double_img {
+      width: 100%; }
     .gallery [class^="col-"] .flex {
       display: none;
       width: 100%;
